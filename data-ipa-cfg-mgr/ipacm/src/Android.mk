@@ -55,7 +55,7 @@ ifeq ($(call is-board-platform-in-list,$(BOARD_ETH_BRIDGE_LIST)),true)
 LOCAL_CFLAGS += -DFEATURE_ETH_BRIDGE_LE
 endif
 
-LOCAL_CFLAGS += -DFEATURE_IPACM_HAL -Wall -Werror -Wno-error=macro-redefined
+LOCAL_CFLAGS += -DFEATURE_IPACM_HAL -Wall -Wno-error=macro-redefined
 ifneq (,$(filter eng, $(TARGET_BUILD_VARIANT)))
 LOCAL_CFLAGS += -DDEBUG
 endif

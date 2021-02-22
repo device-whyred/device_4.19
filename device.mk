@@ -1,4 +1,4 @@
-# 
+#
 # Copyright (C) 2018 The Mokee Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -90,9 +90,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2160
 TARGET_SCREEN_WIDTH := 1080
-
-# Build Type
-export HAVOC_BUILD_TYPE=Official
 
 # Alipay
 PRODUCT_PACKAGES += \
@@ -469,10 +466,10 @@ PRODUCT_PACKAGES += \
     thermal.sdm660
 
 PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
-    $(DEVICE_PATH)/configs/thermal-engine-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-map.conf \
-    $(DEVICE_PATH)/configs/thermal-engine-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-normal.conf \
-    $(DEVICE_PATH)/configs/thermal-engine-video.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-video.conf
+    $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
+    $(LOCAL_PATH)/configs/thermal-engine-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-map.conf \
+    $(LOCAL_PATH)/configs/thermal-engine-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-normal.conf \
+    $(LOCAL_PATH)/configs/thermal-engine-video.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine-video.conf
 
 # Touchscreen
 PRODUCT_PACKAGES += \
